@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/wiki/aaa/</loc>
+    <loc>https://hhwwmm.github.io/wiki/jvm/</loc>
     
-    <lastmod>2019-05-31T18:54:00.796Z</lastmod>
+    <lastmod>2019-06-06T13:24:52.037Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>https://hhwwmm.github.io/about/index.html</loc>
+    
+    <lastmod>2019-06-06T13:19:32.933Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hhwwmm.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-06-06T13:04:29.345Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hhwwmm.github.io/tags/index.html</loc>
     
     <lastmod>2019-05-31T18:31:04.273Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2019-05-31T18:31:04.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2019-05-31T18:31:04.271Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/wiki/hello-world/</loc>
+    <loc>https://hhwwmm.github.io/wiki/hello-world/</loc>
     
     <lastmod>2019-05-31T17:28:42.810Z</lastmod>
     
