@@ -8,12 +8,12 @@ subtitle:
 description: 做一个技术上的积累，更多的内容访问文敏的个人博客（http://huangwenmin.com)
 keywords:
 author: Wenmin Huang
-language:
-timezone: 
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://hhwwmm.github.io
 root: /
 permalink: wiki/:title/
 permalink_defaults:

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 
 
 
@@ -83,6 +84,24 @@
 <meta property="og:title" content="文敏随笔">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="文敏随笔">
+=======
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>Wenmin&#39;s Wiki</title>
+    
+    
+        <meta name="keywords" content="Wenmin&#39;s Wiki">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="做一个技术上的积累，更多的内容访问文敏的个人博客（http://huangwenmin.com)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wenmin&#39;s Wiki">
+<meta property="og:url" content="https://hhwwmm.github.io/index.html">
+<meta property="og:site_name" content="Wenmin&#39;s Wiki">
+<meta property="og:description" content="做一个技术上的积累，更多的内容访问文敏的个人博客（http://huangwenmin.com)">
+>>>>>>> 3faa570d648defc46ac283d52d74baedb254922f
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文敏随笔">
@@ -124,11 +143,209 @@
   <title>文敏随笔</title>
   
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Java开发
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/wiki/jvm/">JVM基本原理</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/wiki/hello-world/">Hello World</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main">
+        <article id="post-jvm" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Java开发/">Java开发</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Java/">Java</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/wiki/jvm/">
+            <time datetime="2019-05-31T18:52:35.000Z" itemprop="datePublished">2019-06-01</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href="https://github.com/hhwwmm/hhwwmm.github.io/raw/master/source/_posts/jvm.md"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/hhwwmm/hhwwmm.github.io/edit/master/source/_posts/jvm.md"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/hhwwmm/hhwwmm.github.io/commits/master/source/_posts/jvm.md"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/wiki/jvm/">JVM基本原理</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p></p><h3 id="简短描述"><a href="#简短描述" class="headerlink" title="简短描述"></a>简短描述</h3><p>Java虚拟机</p>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><h4 id="1-内存模型以及分区"><a href="#1-内存模型以及分区" class="headerlink" title="1.内存模型以及分区"></a>1.内存模型以及分区</h4><ul>
+<li>堆（新生代、老年代、永久代）</li>
+<li>栈</li>
+<li>本地方法栈</li>
+<p>
+                
+            
+        
+        
+            </p></ul></div>   
+            <div class="article-more-link">
+                <a href="/wiki/jvm/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+>>>>>>> 3faa570d648defc46ac283d52d74baedb254922f
 
 
 </head>
@@ -170,8 +387,34 @@
   </div>
 </div>
 
+<<<<<<< HEAD
 <nav class="site-nav">
   
+=======
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href="https://github.com/hhwwmm/hhwwmm.github.io/raw/master/source/_posts/hello-world.md"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/hhwwmm/hhwwmm.github.io/edit/master/source/_posts/hello-world.md"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/hhwwmm/hhwwmm.github.io/commits/master/source/_posts/hello-world.md"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/wiki/hello-world/">Hello World</a>
+        </h1>
+    
+>>>>>>> 3faa570d648defc46ac283d52d74baedb254922f
 
   
     <ul id="menu" class="menu">
