@@ -8,7 +8,7 @@ categories: Java开发
 
 ### 简短描述
 
-Java虚拟机,待补充
+Java虚拟机
 
 ### 常见问题
 
