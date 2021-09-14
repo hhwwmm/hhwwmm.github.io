@@ -7,13 +7,13 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: wenmin huang
-language: zh-CN
+author: John Doe
+language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://huangwenmin.com
+url: http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -29,8 +29,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - README.md
-  - '_posts/**/embed_page/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -58,11 +56,6 @@ prismjs:
   line_number: true
   tab_replace: ''
 
-## Markdown
-## https://github.com/hexojs/hexo-renderer-marked
-marked:
-  gfm: true
-
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -85,30 +78,6 @@ meta_generator: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-
-# Customize
-customize: # 首先修改这项里面的信息为你自己的各项信息
-    sidebar: left # 侧边栏的所在位置，默认左边
-    category_perExpand: true # 侧边栏里的各个分类是否默认全部展开
-    default_index_file: index.md # 是否指定一篇文章作为首页来代替默认的多篇文章的首页，没有此项的话就会显示默认的按时间顺序排列的文章
-
-# Widgets
-widgets: # 挂件，默认指开启了分类这一栏
-    - category
-     - recent_posts
-     - archive
-     - tag
-     - tagcloud
-     - links
-    
-# History version 
-history_control: # 启用这一项使得 wiki 能有历史版本的功能（查看源码、在线编辑、对比历史变动）
-    enable: true
-    server_link: https://github.com # 版本控制服务器，推荐使用 GitHub https://github.com
-    user: hhwwmm
-    repertory: git@github.com:hhwwmm/hhwwmm.github.io.git
-    branch: master
-
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
@@ -127,23 +96,6 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-### JsonContent
-jsonContent:
-  meta: false
-  pages:
-    title: true
-    date: true
-    path: true
-    text: true
-  posts:
-    title: true
-    date: true
-    path: true
-    text: true
-    tags: true
-    categories: true
-  ignore:
-    - 404.html
 ## Themes: https://hexo.io/themes/
 theme: Wikitten 
 
