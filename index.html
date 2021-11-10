@@ -182,7 +182,25 @@
                         </a>
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/09/14/Java%E5%9F%BA%E7%A1%80/">Java基础</a></li>  </ul> 
                     </li> 
-                     <li class="file"><a href="/2021/09/14/hello-world/">Hello World</a></li>  <li class="file"><a href="/2021/09/17/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">排序算法</a></li>  <li class="file"><a href="/2021/11/10/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8/">分库分表</a></li>  </ul> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            数据库
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/11/10/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8/">分库分表</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            算法
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/09/17/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">排序算法</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2021/09/14/hello-world/">Hello World</a></li>  </ul> 
     </div>
     <script>
         $(document).ready(function() {
@@ -262,7 +280,17 @@
                 
                     <div class="article-meta">
                         
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
+    </div>
+
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/database/" rel="tag">database</a>
+    </div>
+
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
@@ -322,11 +350,11 @@
                 
                 
                     
-                    <p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote>
-<ul>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-</ul>
+                    <p><h2 id="为什么要分库分表？"><a href="#为什么要分库分表？" class="headerlink" title="为什么要分库分表？"></a>为什么要分库分表？</h2><p>单机存储能力、连接数有限，存在性能瓶颈，数据量达到千万级以上，操作性能下降</p>
+<h2 id="如何分库分表？"><a href="#如何分库分表？" class="headerlink" title="如何分库分表？"></a>如何分库分表？</h2><p>大量数据分散到多个数据库多个表中，提升数据库性能，核心是数据切分，切分后数据快速定位与整合</p>
+<h3 id="垂直切分（分垂直分库和垂直分表）"><a href="#垂直切分（分垂直分库和垂直分表）" class="headerlink" title="垂直切分（分垂直分库和垂直分表）"></a>垂直切分（分垂直分库和垂直分表）</h3><ol>
+<li>垂直分库<br>按照业务分类进行划分，每个业务有独立数据库</li>
+<li>垂直分表<br>基于数据表的列为依据切分，大表拆小表</li>
 <p>
                 
             
@@ -356,7 +384,17 @@
                 
                     <div class="article-meta">
                         
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
+    </div>
+
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%8E%92%E5%BA%8F/" rel="tag">排序</a>
+    </div>
+
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
@@ -416,11 +454,11 @@
                 
                 
                     
-                    <p><p>十大经典排序算法<br>1、冒泡排序<br>2、选择排序<br>3、插入排序<br>4、希尔排序<br>5、归并排序<br>6、快速排序<br>7、堆排序<br>8、计数排序<br>9、桶排序<br>10、基数排序</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/VX9LwTK77RUPLBFHPS1Z1A">常用的排序算法总结</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/ten-sorting-algorithm.html">十大经典排序算法</a></li>
+                    <p><h3 id="十大经典排序算法"><a href="#十大经典排序算法" class="headerlink" title="十大经典排序算法"></a>十大经典排序算法</h3><ol>
+<li>冒泡排序</li>
+<li>选择排序</li>
+<li>插入排序</li>
+<li>希尔排序</li>
 <p>
                 
             
